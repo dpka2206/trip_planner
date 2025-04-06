@@ -1,0 +1,92 @@
+# research_task:
+#   description: >
+#     Conduct a thorough research about {topic}
+#     Make sure you find any interesting and relevant information given
+#     the current year is {current_year}.
+#   expected_output: >
+#     A list with 10 bullet points of the most relevant information about {topic}
+#   agent: researcher
+
+# reporting_task:
+#   description: >
+#     Review the context you got and expand each topic into a full section for a report.
+#     Make sure the report is detailed and contains any and all relevant information.
+#   expected_output: >
+#     A fully fledged report with the main topics, each with a full section of information.
+#     Formatted as markdown without '```'
+#   agent: reporting_analyst
+
+# 1. Itinerary Planner Agent
+# 2. Accommodation Finder Agent
+# 3. Budget Management Agent
+# 4. Activity Recommendation Agent
+# 5. Transportation Optimization Agent
+# 6. Local Expert AI Agent
+# 7. Weather and Conditions Monitoring Agent
+
+# inputs = {
+#     'destination': 'Japan',
+#     'current_year': str(datetime.now().year),
+#     'no_of_days': '7',
+#     'no_of_people': '4',
+#     'budget': '$10000',
+#     'interests': 'lakeside views, hiking, local cuisine, technology, temples',
+# }
+
+itinerary_planner_task:
+  description: >
+    Create a detailed itinerary for a trip to {destination}
+    Make sure the itinerary includes activities that cater to the {interests} of the travelers.
+  expected_output: >
+    A day-by-day itinerary for a {no_of_days}-day trip to {destination} for {no_of_people} people.
+    Include activities such as {interests} and make sure to stay within the budget of {budget}.
+  agent: itinerary_planner_agent
+
+accommodation_finder_task:
+  description: >
+    Find suitable accommodations for the trip to {destination}
+    Make sure the accommodations are within the {budget} and meet the preferences of the travelers.
+  expected_output: >
+    A list of accommodations in {destination} that are within the budget of {budget} and meet the {interests} of the travelers.
+  agent: accommodation_finder_agent
+
+budget_management_task:
+  description: >
+    Manage the budget for the trip to {destination}
+    Make sure to keep track of expenses and find cost-effective solutions to stay within the budget of {budget}.
+  expected_output: >
+    A budget breakdown for the trip to {destination} showing the expenses for each category and the total cost.
+  agent: budget_management_agent
+
+
+activity_recommendation_task:
+  description: >
+    Recommend activities for the trip to {destination}
+    Provide a list of activities that cater to the interests of the travelers and are within the budget.
+  expected_output: >
+    A list of recommended activities in {destination} that cater to the {interests} of the travelers and are within the budget of {budget}.
+  agent: activity_recommendation_agent
+
+transportation_optimization_task:
+  description: >
+    Optimize transportation for the trip to {destination}
+    Find the most cost-effective and efficient transportation options for the travelers.
+  expected_output: >
+    A transportation plan for the trip to {destination} showing the routes, modes of transportation, and costs.
+  agent: transportation_optimization_agent
+
+local_expert_ai_task:
+  description: >
+    Provide local expertise for the trip to {destination}
+    Share insights, tips, and recommendations to enhance the travelers' experience.
+  expected_output: >
+    Local insights, tips, and recommendations for the trip to {destination} to help the travelers make the most of their visit.
+  agent: local_expert_ai_agent
+
+weather_conditions_monitoring_task:
+  description: >
+    Monitor weather and conditions for the trip to {destination}
+    Keep track of weather forecasts and any conditions that may affect the travelers' plans.
+  expected_output: >
+    Weather forecasts and conditions updates for the trip to {destination} to help the travelers prepare and adjust their plans accordingly.
+  agent: weather_and_conditions_monitoring_agent
