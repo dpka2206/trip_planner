@@ -1,38 +1,3 @@
-# research_task:
-#   description: >
-#     Conduct a thorough research about {topic}
-#     Make sure you find any interesting and relevant information given
-#     the current year is {current_year}.
-#   expected_output: >
-#     A list with 10 bullet points of the most relevant information about {topic}
-#   agent: researcher
-
-# reporting_task:
-#   description: >
-#     Review the context you got and expand each topic into a full section for a report.
-#     Make sure the report is detailed and contains any and all relevant information.
-#   expected_output: >
-#     A fully fledged report with the main topics, each with a full section of information.
-#     Formatted as markdown without '```'
-#   agent: reporting_analyst
-
-# 1. Itinerary Planner Agent
-# 2. Accommodation Finder Agent
-# 3. Budget Management Agent
-# 4. Activity Recommendation Agent
-# 5. Transportation Optimization Agent
-# 6. Local Expert AI Agent
-# 7. Weather and Conditions Monitoring Agent
-
-# inputs = {
-#     'destination': 'Japan',
-#     'current_year': str(datetime.now().year),
-#     'no_of_days': '7',
-#     'no_of_people': '4',
-#     'budget': '$10000',
-#     'interests': 'lakeside views, hiking, local cuisine, technology, temples',
-# }
-
 itinerary_planner_task:
   description: >
     Create a detailed itinerary for a trip to {destination}
