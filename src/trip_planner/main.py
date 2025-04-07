@@ -9,36 +9,6 @@ from trip_planner.crew import TripPlanner
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 
-# This main file is intended to be a way for you to run your
-# crew locally, so refrain from adding unnecessary logic into this file.
-# Replace with inputs you want to test with, it will automatically
-# interpolate any tasks and agents information
-
-# def run():
-#     """
-#     Run the crew.
-#     """
-#     inputs = {
-#         'destination': 'Japan',
-#         'current_year': str(datetime.now().year),
-#         'no_of_days': '7',
-#         'no_of_people': '4',
-#         'budget': '$10000',
-#         'interests': 'lakeside views, hiking, local cuisine, technology, temples',
-#     }
-#     inputs = {
-#             'destination': destination,
-#             'current_year': str(datetime.now().year),
-#             'no_of_days': no_of_days,
-#             'no_of_people': no_of_people,
-#             'budget': budget,
-#             'interests': interests,
-#         }
-#     try:
-#         TripPlanner().crew().kickoff(inputs=inputs)
-#     except Exception as e:
-#         raise Exception(f"An error occurred while running the crew: {e}")
-
 def run():
     """
     Run the crew with user-provided input.
